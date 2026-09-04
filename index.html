@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Nexora Coin</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="brand">
+        <div class="logo">NXR</div>
+        <div>
+          <h1>Nexora Coin</h1>
+          <p id="welcome">Welcome</p>
+        </div>
+      </div>
+      <button class="icon-btn" onclick="showToast('Settings coming soon')">⚙</button>
+    </header>
+
+    <section class="balance-card">
+      <span>Your Balance</span>
+      <strong id="balance">0.0000</strong>
+      <small>NXR</small>
+      <div class="rate">Mining rate: <b>+0.00000579 NXR/s</b></div>
+    </section>
+
+    <section class="mining-card">
+      <div class="section-title">
+        <h2>Mining</h2>
+        <span id="status" class="status off">OFF</span>
+      </div>
+      <p>Start mining and keep the app active in the background.</p>
+      <button id="mineBtn" class="mine-btn" onclick="toggleMining()">START MINING</button>
+      <div class="progress"><div id="progressBar"></div></div>
+      <small id="timer">24:00:00</small>
+    </section>
+
+    <section class="quick-grid">
+      <button onclick="showToast('Tasks coming soon')"><b>✓</b><span>Tasks</span></button>
+      <button onclick="showToast('Referrals coming soon')"><b>👥</b><span>Referrals</span></button>
+      <button onclick="showToast('Daily reward coming soon')"><b>🎁</b><span>Daily Reward</span></button>
+      <button onclick="showToast('Leaderboard coming soon')"><b>🏆</b><span>Leaderboard</span></button>
+    </section>
+
+    <footer>
+      <span>© 2026 Nexora Coin</span>
+      <span>NXR Ecosystem</span>
+    </footer>
+  </main>
+  <div id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
